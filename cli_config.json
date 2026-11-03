@@ -1,5 +1,1 @@
-{
-  "model": "huihui_ai/qwen3-coder-abliterated:latest",
-  "think": false,
-  "num_ctx": 16384
-}
+
