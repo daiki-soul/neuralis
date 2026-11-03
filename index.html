@@ -1576,6 +1576,42 @@ function fileSystemPrompt(chat) {
 
   const errMsg = t => { try { return JSON.parse(t).error || t; } catch (e) { return t; } };
 
+  // ---------- Vision helper: lfm3-vl:2b reads every image, the chosen model gets its description ----------
+  const VISION_MODEL = 'lfm3-vl:2b';
+  async function describeImage(b64, userText) {
+    const prompt = 'Describe this image in detail for another AI that cannot see it. Transcribe all visible text exactly. '
+      + 'Mention objects, people, layout, colors, and any numbers, charts or code.'
+      + (userText ? ' The user asked: "' + userText.slice(0, 500) + '". Include whatever detail helps answer that.' : '');
+    const res = await fetch(OLLAMA + '/api/chat', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: VISION_MODEL, messages: [{ role: 'user', content: prompt, images: [b64] }], stream: false, keep_alive: '5m', options: { num_ctx: 4096 } }),
+    });
+    const raw = await res.text();
+    let json = {}; try { json = JSON.parse(raw); } catch (e) {}
+    if (!res.ok) throw new Error(json.error || raw);
+    return (json.message?.content || '').replace(/<think>[\s\S]*?(<\/think>|$)/g, '').trim() || '(no description returned)';
+  }
+  // Fills m.imageDesc once per message; later turns reuse the stored text
+  async function describeNewImages(chat) {
+    for (const m of chat.messages) {
+      if (m.role !== 'user' || !m.images || !m.images.length) continue;
+      m.imageDesc = m.imageDesc || [];
+      for (let i = m.imageDesc.length; i < m.images.length; i++) {
+        $('status').textContent = 'Reading image ' + (i + 1) + ' of ' + m.images.length + ' with ' + VISION_MODEL + '…';
+        try { m.imageDesc[i] = await describeImage(m.images[i], m.content); }
+        catch (e) {
+          toast('Vision model failed: ' + e.message.slice(0, 120));
+          m.imageDesc[i] = null;   // retried on the next message
+          break;
+        }
+      }
+    }
+    $('status').textContent = '';
+  }
+  const imageContext = m => (m.images || []).map((_, i) => m.imageDesc && m.imageDesc[i]
+    ? '[Image ' + (i + 1) + ' (described by the vision model ' + VISION_MODEL + '; you cannot see it yourself)]\n' + m.imageDesc[i] + '\n[End of image ' + (i + 1) + ']'
+    : '[Image ' + (i + 1) + ' could not be read; tell the user the vision model ' + VISION_MODEL + ' failed or is not installed]').join('\n\n');
+
   // Opens the chat stream; if the model rejects `think`, retries once without it
   async function openStream(body, signal) {
     const post = () => fetch(OLLAMA + '/api/chat', {
@@ -1655,12 +1691,15 @@ function fileSystemPrompt(chat) {
     await Promise.race([memoryQueue, new Promise(r => setTimeout(r, 2500))]);   // don't block the reply on a slow extractor
     await refreshMemory();
 
+    // Images never go to the chosen model: lfm3-vl:2b turns them into text first
+    await describeNewImages(chat);
+
     // Saved memory + conversation history (without the empty placeholder) go to the model.
     // Messages that taught a fact which was later replaced or forgotten are left out, together with their reply.
     const history = chat.messages.slice(0, -1);
     const apiMessages = history.filter((m, i) => !isStaleMsg(m) && !(m.role === 'assistant' && isStaleMsg(history[i - 1]))).map(m => {
       const o = { role: m.role, content: m.role === 'assistant' ? (stripFileBlocks(splitThink(m).answer).trim() || 'Done.') : (m.ctx ?? m.content) };
-      if (m.images && m.images.length) o.images = m.images;
+      if (m.role === 'user' && m.images && m.images.length) o.content = (imageContext(m) + '\n\n' + o.content).trim();
       return o;
     });
     if (apiMessages.length && apiMessages[apiMessages.length - 1].role === 'user') {
