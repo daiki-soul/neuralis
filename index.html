@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="data:image/x-icon;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////wP///4B///gAP//wDA//4AIH/8GAA//CAAH/wAgB/8AAAf/AAAH/wAAD/8AAA//EAAP/wAAD/8AAQ//gQAP/8CAH//gYD//+AD///wD///+D////////////////////////////8=">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neuralis</title>
+<style>
+  :root {
+    --bg: #212121; --sidebar: #171717; --hover: #2a2a2a; --active: #333333;
+    --input: #2f2f2f; --border: #3a3a3a; --text: #ececec; --muted: #9b9b9b;
+    --danger: #ef4444;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body { font-family: -apple-system-body, ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; background: var(--bg); color: var(--text); overflow: hidden; }
+  button, select, textarea, input { font: inherit; color: inherit; }
+  button { cursor: pointer; border: none; background: none; }
+  code, pre { font-family: ui-monospace, Menlo, Consolas, 'Courier New', monospace; }
+
+  .app { display: flex; height: 100%; }
+
+  /* ---------- Sidebar ---------- */
+  #sidebar { width: 260px; background: var(--sidebar); display: flex; flex-direction: column; padding: 8px; flex-shrink: 0; transition: transform .25s; z-index: 30; }
+  #newChat, #openSettings { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 15px; font-size: .95rem; width: 100%; text-align: left; }
+  #newChat:hover, #openSettings:hover { background: var(--hover); }
+  #history { flex: 1; overflow-y: auto; margin-top: 8px; }
+  .group-label { font-size: .75rem; color: var(--muted); padding: 14px 12px 6px; font-weight: 600; }
+  .chat-item { display: flex; align-items: center; gap: 4px; padding: 9px 12px; border-radius: 10px; cursor: pointer; font-size: .92rem; }
+  .chat-item:hover { background: var(--hover); }
+  .chat-item.active { background: var(--active); }
+  .chat-item .t { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chat-item .acts { display: none; gap: 2px; }
+  .chat-item:hover .acts, .chat-item.active .acts { display: flex; }
+  .acts button { color: var(--muted); padding: 2px 6px; border-radius: 6px; font-size: .85rem; }
+  .acts button:hover { color: var(--text); background: var(--border); }
+  .acts button.del:hover { color: var(--danger); }
+  .side-foot { padding: 8px 4px 4px; font-size: .78rem; color: var(--muted); border-top: 1px solid var(--border); }
+  .side-foot .info { padding: 8px 8px 0; }
+  #clearAll { color: var(--muted); font-size: .78rem; margin-top: 4px; }
+  #clearAll:hover { color: var(--danger); }
+  .logobtn { background: transparent; border: none; padding: 8px; cursor: pointer; color: inherit; font: inherit; }
+  .logo { font-size: 22px; font-weight: 500; letter-spacing: -1px; padding-bottom: 10px;}
+
+  /* ---------- Main ---------- */
+  main { flex: 1; display: flex; flex-direction: column; min-width: 0; position: relative; }
+  header { display: flex; align-items: center; gap: 10px; padding: 10px 16px; }
+  #menu { display: none; font-size: 1.3rem; padding: 4px 8px; border-radius: 8px; }
+  #model { background: transparent; border: none; font-size: 1.05rem; font-weight: 600; padding: 6px 8px; border-radius: 10px; cursor: pointer; max-width: 60vw; }
+  #model:hover { background: var(--hover); }
+  #model option { background: var(--input); }
+  #status { color: var(--muted); font-size: .8rem; }
+
+  #messages { flex: 1; overflow-y: auto; }
+  .inner { max-width: 760px; margin: 0 auto; padding: 16px 20px 24px; display: flex; flex-direction: column; gap: 26px; min-height: 100%; }
+  .empty { margin: auto; text-align: center; }
+  .empty h2 { font-size: 1.8rem; font-weight: 600; }
+  .empty p { color: var(--muted); margin-top: 8px; }
+
+  .msg.user { align-self: flex-end; max-width: 80%; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .bubble { background: var(--input); padding: 10px 18px; border-radius: 20px; white-space: pre-wrap; word-break: break-word; line-height: 1.55; }
+  .thumbs { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  .thumbs img { max-width: 220px; max-height: 180px; border-radius: 14px; object-fit: cover; }
+  .filechip { background: var(--input); border: 1px solid var(--border); border-radius: 10px; padding: 6px 12px; font-size: .85rem; }
+  .memtag { font-size: .75rem; color: var(--muted); display: flex; gap: 6px; align-items: center; cursor: pointer; }
+  .memtag:hover { color: var(--text); }
+
+  .msg.assistant { display: flex; gap: 14px; align-items: flex-start; }
+  .avatar { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--border); display: grid; place-items: center; font-size: .9rem; flex-shrink: 0; margin-top: 2px; }
+  .body { flex: 1; min-width: 0; }
+  .content { line-height: 1.7; word-break: break-word; }
+  .content > *:first-child { margin-top: 0; }
+  .content p, .content ul, .content ol, .content pre, .content blockquote, .content table { margin: 0 0 14px; }
+  .content ul, .content ol { padding-left: 24px; }
+  .content code { background: #2f2f2f; padding: 2px 6px; border-radius: 6px; font-size: .88em; }
+  .content pre { background: #0d0d0d; border: 1px solid var(--border); border-radius: 12px; padding: 14px; overflow-x: auto; }
+  .content pre code { background: none; padding: 0; }
+  .content blockquote { border-left: 3px solid var(--border); padding-left: 14px; color: var(--muted); }
+  .content table { border-collapse: collapse; display: block; overflow-x: auto; }
+  .content th, .content td { border: 1px solid var(--border); padding: 6px 12px; }
+  .content a { color: #7ab7ff; }
+  .content.typing::after { content: '●'; margin-left: 4px; animation: blink 1s infinite; font-size: .7em; }
+  @keyframes blink { 50% { opacity: .2; } }
+
+  /* ---------- Thinking ---------- */
+  details.think { margin: 0 0 12px; border: 1px solid var(--border); border-radius: 12px; background: #1b1b1b; }
+  details.think summary { cursor: pointer; padding: 8px 12px; font-size: .85rem; color: var(--muted); list-style: none; display: flex; gap: 8px; align-items: center; user-select: none; }
+  details.think summary::-webkit-details-marker { display: none; }
+  details.think summary::before { content: '▸'; display: inline-block; transition: transform .15s; }
+  details.think[open] summary::before { transform: rotate(90deg); }
+  details.think.live .think-sum { animation: blink 1.4s infinite; }
+  .think-text { padding: 0 14px 12px; font-size: .85rem; color: var(--muted); line-height: 1.6; white-space: pre-wrap; word-break: break-word; max-height: 320px; overflow-y: auto; }
+
+  /* ---------- Composer ---------- */
+  .composer { max-width: 760px; width: 100%; margin: 0 auto; padding: 0 20px 14px; }
+  #chatFiles { display: none; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
+  #chatFiles small { color: var(--muted); font-size: .75rem; }
+  #chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .chip { background: var(--input); border: 1px solid var(--border); border-radius: 12px; padding: 5px 10px; font-size: .82rem; display: flex; gap: 8px; align-items: center; max-width: 220px; }
+  .chip img { width: 30px; height: 30px; object-fit: cover; border-radius: 6px; }
+  .chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chip b { cursor: pointer; color: var(--muted); }
+  .chip b:hover { color: var(--danger); }
+  .box { background: var(--input); border-radius: 28px; display: flex; align-items: flex-end; gap: 6px; padding: 8px 10px; transition: box-shadow .15s; }
+  .box.over { box-shadow: 0 0 0 2px #f77f00; }
+  #attach { width: 36px; height: 36px; border-radius: 50%; font-size: 1.4rem; color: var(--muted); flex-shrink: 0; }
+  #attach:hover { background: var(--active); color: var(--text); }
+#think { height: 36px; padding: 0 12px; border-radius: 18px; font-size: .82rem; color: var(--muted); border: 1px solid var(--border); flex-shrink: 0; transform: translateY(-2px); }
+  #think:hover { color: var(--text); }
+  #think.on { color: #fff; background: var(--active); border-color: #5a5a5a; }
+  #prompt { flex: 1; background: transparent; border: none; outline: none; resize: none; max-height: 200px; padding: 8px 4px; line-height: 1.5; }
+  #prompt::placeholder { color: var(--muted); }
+  #send { width: 36px; height: 36px; border-radius: 50%; background: #fff; color: #000; font-weight: 700; flex-shrink: 0; }
+  #send:disabled { background: #555; color: #888; cursor: default; }
+  /* ---------- Toast ---------- */
+  #toast { position: fixed; top: 18px; left: 50%; transform: translate(-50%, -20px); background: #fff; color: #000; padding: 9px 18px; border-radius: 999px; font-size: .88rem; font-weight: 600; display: flex; gap: 8px; align-items: center; box-shadow: 0 6px 24px rgba(0,0,0,.45); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 60; cursor: pointer; }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+
+
+  /* ---------- Settings modal ---------- */
+  .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 50; align-items: center; justify-content: center; padding: 16px; }
+  .modal.show { display: flex; }
+  .panel { background: var(--bg); border: 1px solid var(--border); border-radius: 18px; width: 100%; max-width: 560px; max-height: 88vh; display: flex; flex-direction: column; }
+  .panel-head { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid var(--border); }
+  .panel-head h3 { font-size: 1.1rem; font-weight: 600; }
+  #closeSettings { color: var(--muted); font-size: 1.1rem; padding: 4px 8px; border-radius: 8px; }
+  #closeSettings:hover { background: var(--hover); color: var(--text); }
+  .panel-body { padding: 18px 20px 22px; overflow-y: auto; }
+  .panel-body h4 { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px; background: var(--input); border-radius: 12px; cursor: pointer; }
+  .row .txt { display: flex; flex-direction: column; gap: 3px; }
+  .row small { color: var(--muted); font-size: .78rem; line-height: 1.4; }
+  .switch { position: relative; width: 44px; height: 26px; flex-shrink: 0; }
+  .switch input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 1; }
+  .switch i { position: absolute; inset: 0; background: #4a4a4a; border-radius: 999px; transition: background .2s; }
+  .switch i::after { content: ''; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); transition: transform .2s; }
+  .switch input:checked + i { background: #34c759; }
+  .switch input:checked + i::after { transform: translateX(18px); }
+  .switch input:focus-visible + i { outline: 2px solid rgba(255,255,255,.5); outline-offset: 2px; }
+  .mem-head { display: flex; justify-content: space-between; align-items: baseline; margin: 22px 0 10px; }
+  #memCount { color: var(--muted); font-size: .8rem; }
+  .mem-add { display: flex; gap: 8px; margin-bottom: 12px; }
+  #memInput { flex: 1; background: var(--input); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; outline: none; min-width: 0; }
+  #memInput:focus { border-color: #666; }
+  #memAdd { background: #fff; color: #000; font-weight: 600; padding: 0 18px; border-radius: 12px; }
+  .mem-item { display: flex; gap: 8px; align-items: flex-start; padding: 10px 14px; background: var(--input); border-radius: 12px; margin-bottom: 8px; }
+  .mem-item .mt { flex: 1; line-height: 1.5; word-break: break-word; font-size: .92rem; }
+  .mem-item button { color: var(--muted); padding: 2px 6px; border-radius: 6px; font-size: .9rem; }
+  .mem-item button:hover { color: var(--text); background: var(--border); }
+  .mem-item button.del:hover { color: var(--danger); }
+  .mem-empty { color: var(--muted); font-size: .88rem; padding: 14px; text-align: center; border: 1px dashed var(--border); border-radius: 12px; }
+  #memClear { color: var(--muted); font-size: .8rem; text-decoration: underline; margin-top: 8px; }
+  #memClear:hover { color: var(--danger); }
+  #rulesText { width: 100%; min-height: 220px; max-height: 40vh; resize: vertical; background: var(--input); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; outline: none; line-height: 1.55; font-size: .88rem; }
+  #rulesText:focus { border-color: #666; }
+  .rules-note { color: var(--muted); font-size: .78rem; line-height: 1.4; margin: 8px 2px 0; }
+  #rulesReset { color: var(--muted); font-size: .8rem; text-decoration: underline; margin-top: 6px; }
+  #rulesReset:hover { color: var(--text); }
+  .rules-gap { height: 26px; }
+
+  /* ---------- Polish ---------- */
+  :root { --surface: #262626; --shadow: 0 16px 48px rgba(0,0,0,.55); }
+  * { scrollbar-width: none; -ms-overflow-style: none; }
+  *::-webkit-scrollbar { display: none; width: 0; height: 0; }
+  button { transition: background .15s, color .15s, border-color .15s, opacity .15s, transform .1s; }
+  button:active:not(:disabled) { transform: scale(.97); }
+  button:focus-visible, input:focus-visible { outline: 2px solid rgba(255,255,255,.5); outline-offset: 2px; }
+  .ico { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .ico svg { display: block; }
+
+  /* sidebar */
+  #sidebar { border-right: 1px solid #242424; padding: 10px; }
+  #newChat { font-weight: 500; }
+  #newChat:hover { border-color: #505050; }
+  #openSettings { color: #d0d0d0; }
+  .group-label { text-transform: uppercase; letter-spacing: .07em; font-size: .68rem; padding: 18px 12px 6px; }
+  .chat-item { margin-bottom: 2px; color: #d6d6d6; transition: background .15s; }
+  .chat-item.active { color: #fff; }
+  .acts button { width: 28px; height: 28px; padding: 0; display: grid; place-items: center; border-radius: 8px; }
+  .side-foot { border-top: 1px solid #262626; padding-top: 8px; }
+  .side-foot1 { border-bottom: 1px solid #262626; padding-bottom: 8px; }
+
+  /* model picker */
+  header { position: relative; z-index: 10; }
+  .picker { position: relative; }
+  #modelBtn { display: flex; align-items: center; gap: 6px; font-size: 1.02rem; font-weight: 600; padding: 7px 10px 7px 12px; border-radius: 12px; max-width: 62vw; }
+  #modelBtn span.nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #modelBtn:hover, #modelBtn.open { background: var(--hover); }
+  #modelBtn .ico { color: var(--muted); transition: transform .2s; }
+  #modelBtn.open .ico { transform: rotate(180deg); }
+  .menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 270px; max-width: min(92vw, 400px); max-height: 55vh; overflow-y: auto; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 6px; box-shadow: var(--shadow); opacity: 0; transform: translateY(-6px) scale(.98); transform-origin: top left; pointer-events: none; transition: opacity .15s, transform .15s; z-index: 40; }
+  .menu.show { opacity: 1; transform: none; pointer-events: auto; }
+  .menu-label { font-size: .68rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); padding: 8px 10px 6px; }
+  .menu-item { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 9px 10px; border-radius: 9px; font-size: .92rem; }
+  .menu-item:hover { background: var(--hover); }
+  .menu-item .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .menu-item small { color: var(--muted); font-size: .75rem; }
+  .menu-item .ico { visibility: hidden; }
+  .menu-item.sel .ico { visibility: visible; }
+
+  /* composer */
+  .box { border: 1px solid transparent; box-shadow: 0 2px 14px rgba(0,0,0,.25); }
+  .box:focus-within { border-color: #4a4a4a; }
+  #attach, #send { display: grid; place-items: center; }
+  #think { display: flex; align-items: center; gap: 6px; }
+  .memtag { gap: 5px; }
+  .memtag .ico { color: #34c759; }
+
+  /* toast */
+  #toast { background: var(--surface); color: var(--text); border: 1px solid var(--border); box-shadow: var(--shadow); font-weight: 500; padding: 10px 18px 10px 12px; }
+  #toast .tic { color: #34c759; }
+
+  /* modals */
+  .modal { display: flex; opacity: 0; visibility: hidden; background: rgba(0,0,0,.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: opacity .18s, visibility .18s; }
+  .modal.show { opacity: 1; visibility: visible; }
+  #dialog { z-index: 70; }
+  .panel { background: #1e1e1e; border-radius: 20px; box-shadow: var(--shadow); overflow: hidden; transform: translateY(14px) scale(.98); transition: transform .22s cubic-bezier(.2,.8,.2,1); }
+  .modal.show .panel { transform: none; }
+  .panel-head { padding: 18px 22px; }
+  .panel-head h3 { display: flex; align-items: center; gap: 10px; font-size: 1.05rem; }
+  #closeSettings { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; padding: 0; }
+  .panel-body { padding: 20px 22px 24px; }
+  .row { padding: 14px 16px; }
+  .mem-add { gap: 8px; }
+  #memAdd { display: flex; align-items: center; gap: 6px; }
+  #memAdd:hover { background: #e6e6e6; }
+  .mem-item { align-items: center; padding: 11px 12px 11px 16px; border: 1px solid transparent; }
+  .mem-item:hover { border-color: var(--border); }
+  .mem-item .md { color: var(--muted); font-size: .72rem; margin-top: 3px; }
+  .mem-item button { width: 30px; height: 30px; padding: 0; display: grid; place-items: center; border-radius: 8px; }
+  .mem-empty { padding: 22px 14px; line-height: 1.5; }
+
+  /* confirm / prompt dialog */
+  .dlg { max-width: 400px; padding: 22px; display: block; }
+  .dlg h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; }
+  .dlg p { color: var(--muted); font-size: .9rem; line-height: 1.5; margin-bottom: 14px; }
+  #dlgInput { width: 100%; background: var(--input); border: 1px solid var(--border); border-radius: 12px; padding: 11px 14px; outline: none; margin-bottom: 16px; }
+  #dlgInput:focus { border-color: #666; }
+  .dlg-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
+  .btn { padding: 9px 18px; border-radius: 12px; font-weight: 600; font-size: .9rem; }
+  .btn.ghost { background: var(--input); }
+  .btn.ghost:hover { background: var(--active); }
+  .btn.primary { background: #fff; color: #000; }
+  .btn.primary:hover { background: #e6e6e6; }
+  .btn.danger { background: var(--danger); color: #fff; }
+  .btn.danger:hover { background: #dc2626; }
+
+  @media (max-width: 600px) {
+    #settings { align-items: flex-end; padding: 0; }
+    #settings .panel { max-width: none; border-radius: 20px 20px 0 0; max-height: 92vh; transform: translateY(40px); }
+    #settings.show .panel { transform: none; }
+  }
+
+  /* ---------- File blocks ---------- */
+  .seg { display: contents; }
+  .fileblock { border: 1px solid var(--border); border-radius: 14px; background: #171717; margin: 0 0 14px; overflow: hidden; }
+  .fb-head { display: flex; align-items: center; gap: 10px; padding: 8px 8px 8px 14px; background: #1c1c1c; border-bottom: 1px solid var(--border); }
+  .fb-head > .ico { color: var(--muted); }
+  .fb-name { font-weight: 600; font-size: .9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .fb-meta { flex: 1; color: var(--muted); font-size: .75rem; white-space: nowrap; }
+  .fileblock.live .fb-meta { animation: blink 1.2s infinite; }
+  .fb-btn { display: flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 9px; font-size: .82rem; font-weight: 500; color: var(--text); border: 1px solid var(--border); }
+  .fb-btn:hover { background: var(--active); }
+  .fb-btn.primary { background: #fff; color: #000; border-color: #fff; font-weight: 600; }
+  .fb-btn.primary:hover { background: #e6e6e6; }
+  .content .fileblock.live pre { overflow: hidden; }   /* while writing, the code box follows the output by itself and never traps the scroll */
+  .content .fileblock pre { margin: 0; border: none; border-radius: 0; max-height: 360px; overflow: auto; padding: 12px 14px; font-size: .85rem; line-height: 1.55; background: #0d0d0d; }
+
+  /* ---------- Mobile ---------- */
+  #overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 20; }
+  @media (max-width: 768px) {
+    #sidebar { position: fixed; top: 0; bottom: 0; left: 0; transform: translateX(-100%); }
+    #sidebar.open { transform: none; }
+    #sidebar.open ~ #overlay { display: block; }
+    #menu { display: block; }
+    .chat-item .acts { display: flex; }
+  }
+
+  /* chat list: fixed row height, actions overlay instead of changing the layout on hover */
+  .chat-item { position: relative; height: 40px; overflow: hidden; }
+  .chat-item .t { min-width: 0; }
+  .chat-item .acts { display: flex; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); gap: 0; padding-left: 22px; border-radius: 8px; opacity: 0; pointer-events: none; transition: opacity .12s; background: linear-gradient(90deg, transparent, var(--hover) 45%); }
+  .chat-item.active .acts { background: linear-gradient(90deg, transparent, var(--active) 45%); }
+  .chat-item:hover .acts, .chat-item.active .acts { opacity: 1; pointer-events: auto; }
+  .chat-item .acts button { width: 26px; height: 26px; }
+  @media (max-width: 768px) { .chat-item .acts { opacity: 1; pointer-events: auto; } }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside id="sidebar">
+    <div class="logo">
+      <button id="logobtn">Neuralis</button>
+    </div>
+    <div class="side-foot1">
+      <button id="newChat"><span class="ico" data-ic="edit"></span> New chat</button>
+    </div>
+      <div id="history"></div>
+      <div class="side-foot">
+        <button id="openSettings"><span class="ico" data-ic="sliders"></span> Settings</button>
+        <div class="info">
+          <button id="clearAll">Clear all chats</button>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay"></div>
+
+  <main>
+    <header>
+      <button id="menu" aria-label="Open sidebar"><span class="ico" data-ic="menu" data-s="22"></span></button>
+      <div class="picker" id="picker">
+        <button id="modelBtn" aria-haspopup="listbox"><span class="nm" id="modelName">loading…</span><span class="ico" data-ic="chevron" data-s="16"></span></button>
+        <div class="menu" id="modelMenu"></div>
+      </div>
+      <select id="model" hidden><option>loading...</option></select>
+      <span id="status"></span>
+    </header>
+
+    <div id="messages"><div class="inner" id="thread"></div></div>
+
+    <div class="composer">
+      <div id="chatFiles"></div>
+      <div id="chips"></div>
+      <div class="box" id="box">
+        <button id="attach" title="Attach files"><span class="ico" data-ic="plus" data-s="20"></span></button>
+        <input type="file" id="file" multiple hidden>
+        <button id="think" title="Show the model's reasoning"><span class="ico" data-ic="bulb" data-s="16"></span> Think</button>
+        <textarea id="prompt" rows="1" placeholder="Message Neuralis"></textarea>
+        <button id="send" disabled></button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="toast"></div>
+
+<div id="settings" class="modal">
+  <div class="panel">
+    <div class="panel-head">
+      <h3><span class="ico" data-ic="sliders" data-s="20"></span> Settings</h3>
+      <button id="closeSettings" aria-label="Close"><span class="ico" data-ic="x"></span></button>
+    </div>
+    <div class="panel-body">
+      <h4>Rules</h4>
+      <textarea id="rulesText" spellcheck="false" aria-label="Rules"></textarea>
+      <p class="rules-note">The AI reads these rules first, at the start of every chat and before every reply.</p>
+      <button id="rulesReset">Reset to default</button>
+      <div class="rules-gap"></div>
+
+      <h4>Personalization</h4>
+      <label class="row">
+        <span class="txt"><b>Auto-save memory</b></span>
+        <span class="switch"><input type="checkbox" id="autoMem"><i></i></span>
+      </label>
+
+      <div class="mem-head"><b>Saved memory</b><span id="memCount"></span></div>
+      <div class="mem-add">
+        <input id="memInput" placeholder="Add something to remember…" maxlength="2000">
+        <button id="memAdd"><span class="ico" data-ic="plus" data-s="16"></span> Add</button>
+      </div>
+      <div id="memList"></div>
+      <button id="memClear">Clear all memory</button>
+    </div>
+  </div>
+</div>
+
+<div id="dialog" class="modal">
+  <div class="panel dlg">
+    <h3 id="dlgTitle"></h3>
+    <p id="dlgText"></p>
+    <input id="dlgInput" autocomplete="off">
+    <div class="dlg-actions">
+      <button id="dlgCancel" class="btn ghost">Cancel</button>
+      <button id="dlgOk" class="btn primary">OK</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.9/purify.min.js"></script>
+<script>
+  const OLLAMA = '';
+  const STORE = 'huihui_ai/qwen3-abliterated:8b';
+  const $ = id => document.getElementById(id);
+
+  // ---------- Icons ----------
+  const P = {
+    edit: '<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>',
+    trash: '<path d="M3 6h18"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>',
+    sliders: '<line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>',
+    chevron: '<polyline points="6 9 12 15 18 9"/>',
+    check: '<polyline points="20 6 9 17 4 12"/>',
+    circle: '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>',
+    x: '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
+    plus: '<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
+    menu: '<line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>',
+    bulb: '<path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/>',
+    up: '<line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>',
+    stop: '<rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/>',
+    download: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>',
+    copy: '<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
+    file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/>',
+  };
+  const ic = (p, s = 18) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+  function initIcons() {
+    document.querySelectorAll('[data-ic]').forEach(el => { el.innerHTML = ic(P[el.dataset.ic], +el.dataset.s || 18); });
+  }
+
+  // ---------- Dialog (replaces browser prompt / confirm) ----------
+  let dlgResolve = null;
+  function ask({ title, text = '', value, ok = 'OK', danger = false }) {
+    return new Promise(resolve => {
+      $('dlgTitle').textContent = title;
+      $('dlgText').textContent = text;
+      $('dlgText').style.display = text ? '' : 'none';
+      const inp = $('dlgInput'), okb = $('dlgOk');
+      inp.style.display = value === undefined ? 'none' : '';
+      if (value !== undefined) inp.value = value;
+      okb.textContent = ok;
+      okb.className = 'btn ' + (danger ? 'danger' : 'primary');
+      $('dialog').classList.add('show');
+      setTimeout(() => { if (value === undefined) okb.focus(); else { inp.focus(); inp.select(); } }, 40);
+      dlgResolve = r => { $('dialog').classList.remove('show'); dlgResolve = null; resolve(r); };
+    });
+  }
+  $('dlgCancel').onclick = () => dlgResolve && dlgResolve(null);
+  $('dlgOk').onclick = () => dlgResolve && dlgResolve($('dlgInput').style.display === 'none' ? true : $('dlgInput').value);
+  $('dialog').onclick = e => { if (e.target === $('dialog') && dlgResolve) dlgResolve(null); };
+  $('dlgInput').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); $('dlgOk').click(); } });
+  if (window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc =
+    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+  // ---------- State ----------
+  let chats = [];
+  try { chats = JSON.parse(localStorage.getItem(STORE)) || []; } catch (e) {}
+  let currentId = null;      // null = a new, unsaved chat
+  let pending = [];          // attachments waiting to be sent
+  let controller = null;     // AbortController while streaming
+  let memories = [];         // saved memory (lives in memory.json on the server)
+  let thinkOn = localStorage.getItem('ollama_think') !== '0';
+
+  // ---------- Rules (always the first thing the AI reads, in every chat) ----------
+  const RULES_KEY = 'ollama_rules';
+  const DEFAULT_RULES = `Rule: Ask Before Assuming
+Never assume what the user wants when important details are missing or unclear.
+
+1. Identify what information is missing before starting the task.
+2. Ask the user for the missing information before generating an answer or doing the task.
+3. Ask one clear, simple question at a time. If multiple details are required, collect them in a short set of questions.
+4. Never invent a topic, goal, format, length, or other requirement that the user has not provided.
+5. Do not start the task until the necessary details are clear.
+6. If the request is already clear enough, proceed without asking unnecessary questions.
+7. Do not ask for information that is optional or does not affect the result.
+8. If the user gives incomplete information, ask for clarification instead of guessing.
+9. Keep clarification questions short and use simple language.
+10. If there are several reasonable interpretations of a request, ask which one the user means.
+
+Example
+User: "Generate me an essay."
+AI: "What is the topic of your essay, and how long should it be?"
+User: "Write a program."
+AI: "What should the program do, and which programming language do you want to use?"
+
+Main principle: Understand the user's actual intention before acting. Ask first when necessary, never fill important gaps with assumptions, and avoid unnecessary questions when the request is already clear.`;
+  function getRules() { const v = localStorage.getItem(RULES_KEY); return v === null ? DEFAULT_RULES : v; }
+  function rulesPrompt() {
+    const r = getRules().trim();
+    return r ? 'RULES (read these first. They always apply, in every chat and every reply):\n' + r : '';
+  }
+  let autoMemory = localStorage.getItem('ollama_auto_memory') !== '0';
+
+  const getChat = () => chats.find(c => c.id === currentId);
+
+  // ---------- Per-chat file storage ----------
+  // Each chat's files (chat.work) and their disk handles live in IndexedDB, not localStorage,
+  // so they survive reloads and are never dropped when localStorage fills up.
+  // Every chat has its own separate collection, keyed by the chat id.
+  let idb = null;
+  let preparing = false;
+  const dirtyWork = new Set();
+  const idbReq = r => new Promise((res, rej) => { r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+  const idbTx = (stores, fn) => new Promise((res, rej) => {
+    const tx = idb.transaction(stores, 'readwrite');
+    try { fn(tx); } catch (e) { rej(e); return; }
+    tx.oncomplete = () => res();
+    tx.onerror = tx.onabort = () => rej(tx.error);
+  });
+  function idbOpen() {
+    return new Promise(resolve => {
+      if (!window.indexedDB) return resolve(null);
+      const r = indexedDB.open('ollama_chat_files', 1);
+      r.onupgradeneeded = () => { r.result.createObjectStore('work'); r.result.createObjectStore('handles'); };
+      r.onsuccess = () => resolve(r.result);
+      r.onerror = r.onblocked = () => resolve(null);
+    });
+  }
+
+  const touchWork = chat => { if (chat) dirtyWork.add(chat.id); };
+  function flushWork() {
+    if (!idb) return Promise.resolve();
+    const ids = [...dirtyWork]; dirtyWork.clear();
+    const jobs = ids.map(id => chats.find(x => x.id === id)).filter(c => c && c.work);
+    if (!jobs.length) return Promise.resolve();
+    return idbTx(['work'], tx => jobs.forEach(c => tx.objectStore('work').put(c.work, c.id)))
+      .catch(() => { $('status').textContent = 'Could not store chat files'; });
+  }
+
+  function setHandle(key, h) {
+    handles.set(key, h);
+    if (idb) idbTx(['handles'], tx => tx.objectStore('handles').put(h, key)).catch(() => {});
+  }
+  function dropHandle(key) {
+    handles.delete(key);
+    if (idb) idbTx(['handles'], tx => tx.objectStore('handles').delete(key)).catch(() => {});
+  }
+  // Forget everything stored for one chat (used when the chat is deleted)
+  function purgeChatFiles(id) {
+    for (const k of [...handles.keys()]) if (k.startsWith(id + '|')) handles.delete(k);
+    dirtyWork.delete(id);
+    if (!idb) return;
+    idbTx(['work', 'handles'], tx => {
+      tx.objectStore('work').delete(id);
+      tx.objectStore('handles').delete(IDBKeyRange.bound(id + '|', id + '|\uffff'));
+    }).catch(() => {});
+  }
+
+  async function initStore() {
+    idb = await idbOpen();
+    if (!idb) return;
+    try {
+      const get = name => {
+        const st = idb.transaction(name, 'readonly').objectStore(name);
+        return Promise.all([idbReq(st.getAllKeys()), idbReq(st.getAll())]);
+      };
+      const [wk, wv] = await get('work');
+      wk.forEach((k, i) => {
+        const c = chats.find(x => x.id === k);
+        if (c) c.work = Object.assign({}, c.work, wv[i]);
+      });
+      const [hk, hv] = await get('handles');
+      hk.forEach((k, i) => handles.set(k, hv[i]));
+      // Older versions kept files inside localStorage: move them over before localStorage is rewritten
+      chats.forEach(c => { if (c.work) dirtyWork.add(c.id); });
+      await flushWork();
+      save();
+      renderChatFiles();
+    } catch (e) { idb = null; }
+  }
+
+  function save() {
+    if (currentId) dirtyWork.add(currentId);
+    const strip = idb ? (k, v) => (k === 'work' ? undefined : v) : undefined;
+    const write = () => localStorage.setItem(STORE, JSON.stringify(chats, strip));
+    try { write(); } catch (e) {
+      // Storage full: drop images from every chat except the current one, then retry
+      chats.forEach(c => { if (c.id !== currentId) c.messages.forEach(m => { delete m.images; }); });
+      try { write(); } catch (e2) {
+        if (idb) { $('status').textContent = 'Storage full: history not saved'; }
+        else {
+          // No IndexedDB: drop the stored file copies of other chats too
+          chats.forEach(c => { if (c.id !== currentId) delete c.work; });
+          try { write(); } catch (e3) { $('status').textContent = 'Storage full: history not saved'; }
+        }
+      }
+    }
+    flushWork();
+  }
+
+  // ---------- Markdown ----------
+  function md(text) {
+    if (window.marked && window.DOMPurify) {
+      return DOMPurify.sanitize(marked.parse(text, { breaks: true }));
+    }
+    const d = document.createElement('div'); d.textContent = text; return d.innerHTML.replace(/\n/g, '<br>');
+  }
+
+  // ---------- Models ----------
+  let modelList = [];
+  const fmtSize = n => n ? (n / 1e9).toFixed(1) + ' GB' : '';
+
+  async function loadModels() {
+    try {
+      const res = await fetch(OLLAMA + '/api/tags');
+      const { models } = await res.json();
+      modelList = models;
+      const saved = localStorage.getItem('ollama_model');
+      $('model').innerHTML = models.map(m => `<option>${m.name}</option>`).join('');
+      if (saved && models.some(m => m.name === saved)) $('model').value = saved;
+      $('status').textContent = models.length ? '' : 'No models.';
+    } catch (e) {
+      modelList = [];
+      $('model').innerHTML = '<option>offline</option>';
+      $('status').textContent = 'Cannot reach Ollama. Is it running?';
+    }
+    syncModelUI();
+  }
+
+  function syncModelUI() {
+    const cur = $('model').value;
+    $('modelName').textContent = cur || 'No model';
+    const menu = $('modelMenu');
+    menu.innerHTML = '<div class="menu-label">Model</div>';
+    modelList.forEach(m => {
+      const b = document.createElement('button');
+      b.className = 'menu-item' + (m.name === cur ? ' sel' : '');
+      b.innerHTML = '<span class="nm"></span><small></small><span class="ico"></span>';
+      b.querySelector('.nm').textContent = m.name;
+      b.querySelector('small').textContent = fmtSize(m.size);
+      b.querySelector('.ico').innerHTML = ic(P.check, 16);
+      b.onclick = () => { setModel(m.name); closeModelMenu(); };
+      menu.appendChild(b);
+    });
+    if (!modelList.length) menu.insertAdjacentHTML('beforeend', '<div class="menu-label" style="text-transform:none;letter-spacing:0">No models found</div>');
+  }
+  function setModel(name) { $('model').value = name; localStorage.setItem('ollama_model', name); syncModelUI(); }
+  function closeModelMenu() { $('modelMenu').classList.remove('show'); $('modelBtn').classList.remove('open'); }
+  $('modelBtn').onclick = e => {
+    e.stopPropagation();
+    const open = $('modelMenu').classList.toggle('show');
+    $('modelBtn').classList.toggle('open', open);
+  };
+  document.addEventListener('click', e => { if (!$('picker').contains(e.target)) closeModelMenu(); });
+
+  // ---------- Think toggle ----------
+  function renderThink() { $('think').classList.toggle('on', thinkOn); }
+  $('think').onclick = () => {
+    thinkOn = !thinkOn;
+    localStorage.setItem('ollama_think', thinkOn ? '1' : '0');
+    renderThink();
+  };
+
+  // Splits a message into its reasoning and its final answer.
+  // Handles both Ollama's separate `thinking` field and inline <think> tags.
+  function splitThink(m) {
+    let think = m.thinking || '';
+    let answer = m.content || '';
+    const open = answer.indexOf('<think>');
+    if (open !== -1) {
+      const close = answer.indexOf('</think>', open);
+      const inner = close === -1 ? answer.slice(open + 7) : answer.slice(open + 7, close);
+      think = (think ? think + '\n' : '') + inner;
+      answer = answer.slice(0, open) + (close === -1 ? '' : answer.slice(close + 8));
+    }
+    return { think: m.noThink ? '' : think.trim(), answer: answer.trim() };
+  }
+
+  function paintBot(body, m, live) {
+    const { think, answer } = splitThink(m);
+    const det = body.querySelector('details.think');
+    const out = body.querySelector('.content');
+    if (think) {
+      const thinkingNow = live && !answer;
+      const txt = det.querySelector('.think-text');
+      det.hidden = false;
+      txt.textContent = think;
+      det.classList.toggle('live', thinkingNow);
+      det.querySelector('.think-sum').textContent =
+        thinkingNow ? 'Thinking…' : (m.thinkTime ? `Thought for ${m.thinkTime}s` : 'Thoughts');
+      if (thinkingNow) { det.open = true; txt.scrollTop = txt.scrollHeight; }
+      else if (!det._closed) { det.open = false; det._closed = true; }
+    } else {
+      det.hidden = true;
+    }
+    renderAnswer(out, answer, live);
+  }
+
+  // ---------- File block maker ----------
+  // The model writes a file as a ```file:name.ext block. These helpers turn that block into a file card
+  // (copy / download) and keep the finished files in the chat so the model can see and revise them.
+  const LANGS = { py: 'Python', js: 'JavaScript', mjs: 'JavaScript', ts: 'TypeScript', jsx: 'JSX', tsx: 'TSX', html: 'HTML', css: 'CSS', json: 'JSON', md: 'Markdown', txt: 'Text', sh: 'Shell', bat: 'Batch', csv: 'CSV', java: 'Java', c: 'C', h: 'C header', cpp: 'C++', cs: 'C#', go: 'Go', rs: 'Rust', php: 'PHP', rb: 'Ruby', sql: 'SQL', yml: 'YAML', yaml: 'YAML', xml: 'XML', toml: 'TOML', ini: 'INI', kt: 'Kotlin', swift: 'Swift', lua: 'Lua', r: 'R' };
+  const langOf = n => { const e = (String(n).split('.').pop() || '').toLowerCase(); return LANGS[e] || (e && e !== String(n).toLowerCase() ? e.toUpperCase() : 'Text'); };
+  const cleanName = raw => {
+    const n = baseName(String(raw).trim().replace(/^[`"'*]+|[`"'*]+$/g, '')).replace(/[<>:"|?*\u0000-\u001f]/g, '_').slice(0, 120).trim();
+    return n || 'file.txt';
+  };
+
+  // Splits an answer into plain text and file blocks. An unclosed block (still streaming, or cut off) has closed:false.
+  function parseBlocks(text) {
+    const segs = []; let buf = [], cur = null;
+    const flush = () => { const t = buf.join('\n'); if (t.trim()) segs.push({ type: 'text', text: t }); buf = []; };
+    for (const line of String(text).split('\n')) {
+      if (cur) {
+        const c = /^(`{3,})[ \t]*$/.exec(line);
+        if (c && c[1].length >= cur.fence) { cur.closed = true; segs.push(cur); cur = null; }
+        else cur.lines.push(line);
+        continue;
+      }
+      const o = /^(`{3,})file:[ \t]*(.+?)[ \t]*$/.exec(line);
+      if (o) { flush(); cur = { type: 'file', fence: o[1].length, name: cleanName(o[2]), lines: [], closed: false }; }
+      else buf.push(line);
+    }
+    if (cur) segs.push(cur); else flush();
+    segs.forEach(s => { if (s.type === 'file') { s.code = s.lines.join('\n'); delete s.lines; } });
+    return segs;
+  }
+
+  function copyText(t) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t);
+    return new Promise((res, rej) => {
+      const a = document.createElement('textarea'); a.value = t; a.style.cssText = 'position:fixed;opacity:0';
+      document.body.appendChild(a); a.select();
+      try { document.execCommand('copy') ? res() : rej(); } catch (e) { rej(e); } finally { a.remove(); }
+    });
+  }
+  function downloadText(name, code) {
+    const url = URL.createObjectURL(new Blob([code.endsWith('\n') ? code : code + '\n'], { type: 'text/plain;charset=utf-8' }));
+    const a = document.createElement('a'); a.href = url; a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function fileCard(s, live) {
+    const writing = live && !s.closed;
+    const lines = s.code ? s.code.split('\n').length : 0;
+    const card = document.createElement('div');
+    card.className = 'fileblock' + (writing ? ' live' : '');
+    card.innerHTML = '<div class="fb-head"><span class="ico"></span><span class="fb-name"></span><span class="fb-meta"></span></div><pre><code></code></pre>';
+    card.querySelector('.ico').innerHTML = ic(P.file, 16);
+    card.querySelector('.fb-name').textContent = s.name;
+    card.querySelector('.fb-meta').textContent = writing ? 'Writing…' : langOf(s.name) + ' · ' + lines + (lines === 1 ? ' line' : ' lines') + (s.closed ? '' : ' · incomplete');
+    card.querySelector('code').textContent = s.code;
+    if (!writing) {
+      const head = card.querySelector('.fb-head');
+      const mk = (cls, icon, label, fn) => {
+        const b = document.createElement('button'); b.className = 'fb-btn ' + cls;
+        b.innerHTML = '<span class="ico">' + ic(P[icon], 15) + '</span>'; b.appendChild(document.createTextNode(label));
+        b.onclick = fn; head.appendChild(b);
+      };
+      mk('', 'copy', 'Copy', () => copyText(s.code).then(() => toast('Copied ' + s.name)).catch(() => toast('Could not copy')));
+      mk('primary', 'download', 'Download', () => downloadText(s.name, s.code));
+    }
+    return card;
+  }
+
+  // Paints the answer. Parts that did not change keep their DOM node, so a finished file card is not rebuilt
+  // (and does not lose its scroll position) while the rest of the answer is still streaming.
+  function renderAnswer(out, answer, live) {
+    const segs = parseBlocks(answer);
+    const prevKeys = out._keys || [], prevNodes = out._nodes || [];
+    const keys = [], nodes = [];
+    segs.forEach((s, i) => {
+      const key = s.type === 'text' ? 't\u0001' + s.text : 'f\u0001' + s.name + '\u0001' + s.closed + '\u0001' + live + '\u0001' + s.code;
+      let n = prevKeys[i] === key ? prevNodes[i] : null;
+      if (!n) {
+        if (s.type === 'text') { n = document.createElement('div'); n.className = 'seg'; n.innerHTML = md(s.text); }
+        else n = fileCard(s, live);
+      }
+      keys.push(key); nodes.push(n);
+    });
+    nodes.forEach((n, i) => { if (out.childNodes[i] !== n) out.insertBefore(n, out.childNodes[i] || null); });
+    while (out.childNodes.length > nodes.length) out.lastChild.remove();
+    out._keys = keys; out._nodes = nodes;
+    const last = nodes[nodes.length - 1];
+    if (live && last && last.classList.contains('live')) { const pre = last.querySelector('pre'); pre.scrollTop = pre.scrollHeight; }
+  }
+
+  // Files the model finished writing are stored in the chat, so the next message can read or revise them
+  function harvestFiles(chat, m) {
+    const done = parseBlocks(splitThink(m).answer).filter(s => s.type === 'file' && s.closed && s.code.trim());
+    if (!done.length) return [];
+    chat.work = chat.work || {};
+    done.forEach(s => {
+      const k = Object.keys(chat.work).find(x => x.toLowerCase() === s.name.toLowerCase()) || s.name;
+      chat.work[k] = { text: s.code, crlf: false };
+      dropHandle(hkey(chat.id, k));   // the new version replaces any copy opened from disk
+    });
+    touchWork(chat);
+    return done.map(s => s.name);
+  }
+
+  // ---------- Memory ----------
+  async function memApi(method, path = '', body) {
+    const res = await fetch(OLLAMA + '/api/memory' + path, {
+      method,
+      headers: body ? { 'Content-Type': 'application/json' } : {},
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(json.error || 'Memory request failed');
+    return json;
+  }
+
+  async function loadMemory() {
+    try { memories = (await memApi('GET')).items || []; } catch (e) { memories = []; }
+    renderMemory();
+  }
+
+  let toastTimer;
+  function toast(msg = 'Memory updated') {
+    const t = $('toast');
+    t.innerHTML = '<span class="tic ico"></span>';
+    t.firstChild.innerHTML = ic(P.circle, 18);
+    t.appendChild(document.createTextNode(msg));
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
+  }
+  $('toast').onclick = () => { $('toast').classList.remove('show'); openSettings(); };
+
+  async function addMemory(text) {
+    const json = await memApi('POST', '', { text });
+    memories = json.items || [];
+    renderMemory();
+    if (json.added) toast();
+    return json.added;
+  }
+
+  function renderMemory() {
+    const list = $('memList');
+    list.innerHTML = '';
+    $('memCount').textContent = memories.length ? memories.length + ' saved' : '';
+    $('memClear').style.display = memories.length ? '' : 'none';
+    if (!memories.length) {
+      list.innerHTML = '<div class="mem-empty">No saved memory yet.</div>';
+      return;
+    }
+    [...memories].reverse().forEach(m => {
+      const row = document.createElement('div');
+      row.className = 'mem-item';
+      row.innerHTML = '<div class="mt"><div class="mtx"></div><div class="md"></div></div><button class="ed" title="Edit"></button><button class="del" title="Delete"></button>';
+      row.querySelector('.mtx').textContent = m.text;
+      row.querySelector('.md').textContent = m.created ? new Date(m.created).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+      row.querySelector('.ed').innerHTML = ic(P.edit, 15);
+      row.querySelector('.del').innerHTML = ic(P.trash, 15);
+      row.querySelector('.ed').onclick = async () => {
+        const t = await ask({ title: 'Edit memory', value: m.text, ok: 'Save' });
+        if (!t || !t.trim() || t.trim() === m.text) return;
+        try { memories = (await memApi('PUT', '/' + m.id, { text: t.trim() })).items; renderMemory(); toast(); }
+        catch (e) { $('status').textContent = e.message; }
+      };
+      row.querySelector('.del').onclick = async () => {
+        try { memories = (await memApi('DELETE', '/' + m.id)).items; renderMemory(); toast(); }
+        catch (e) { $('status').textContent = e.message; }
+      };
+      list.appendChild(row);
+    });
+  }
+
+  // A short hint on the newest message, so a small model reliably uses the file block format
+  const FILE_INTENT = /\b(make|create|write|generate|build|produce|save|give me)\b[\s\S]{0,60}\b(files?|scripts?|python|\.py|\.js|\.html|\.css|\.json|\.txt|\.md|\.csv)\b/i;
+  const fileReminder = t => FILE_INTENT.test(t || '') ? '\n\n[To create a file, reply with a ```file:name.ext block holding the complete file, plus at most two short sentences.]' : '';
+
+  const wordsOf = s => String(s || '').toLowerCase().match(/[\p{L}\p{N}]{3,}/gu) || [];
+
+  // Entries for the short reminder on the newest message. Small memory: all of it. Large memory: every entry about
+  // the assistant (name, tone, rules) plus the entries that share words with the message.
+  function pickMemories(query, max = 10) {
+    if (memories.length <= max) return memories.slice();
+    const q = new Set(wordsOf(query));
+    const scored = memories.map((m, i) => ({
+      m, i,
+      s: (/^the assistant\b/i.test(m.text) ? 1000 : 0) + wordsOf(m.text).filter(w => q.has(w)).length * 10 + i / 1000,   // newer wins ties
+    }));
+    scored.sort((a, b) => b.s - a.s);
+    return scored.slice(0, max).sort((a, b) => a.i - b.i).map(x => x.m);
+  }
+
+  // The full memory, placed at the very start of the system prompt so it is never buried under file contents
+  function memoryPrompt() {
+    if (!memories.length) return null;
+    const list = memories.map(m => '- ' + String(m.text).replace(/\s*\n\s*/g, ' '));
+    while (list.length > 1 && list.join('\n').length > 5000) list.shift();   // keep it bounded: newest entries win
+    return {
+      role: 'system',
+      content: 'SAVED MEMORY (what the user told you to remember):\n' + list.join('\n') + '\n' +
+        'Apply every entry in every reply, naturally and without announcing it. Entries about "the assistant" are rules for you: your name, tone, language, format. Obey them. Entries about "the user" describe the user: use them whenever they are relevant. ' +
+        'This list is complete and current. If the chat history contradicts it, this list or the user\'s newest message wins. Do not quote this list, do not say "memory", and do not mention old or replaced values, unless the user asks what you remember.',
+    };
+  }
+
+  // Short version attached to the newest user message so a small model does not lose it in a long prompt
+  function memoryReminder(query) {
+    if (!memories.length) return '';
+    const short = pickMemories(query, 10).map(m => {
+      const t = String(m.text).replace(/\s*\n\s*/g, ' ');
+      return t.length > 160 ? t.slice(0, 160) + '…' : t;
+    });
+    return '\n\n[Saved memory, apply silently: ' + short.join(' | ') + ']';
+  }
+
+  // A one-shot (non-streaming) call to the model
+  async function ollamaOnce(messages, extra = {}) {
+    const model = $('model').value;
+    const attempt = async noThink => {
+      const body = { model, messages, stream: false, keep_alive: '30m', ...extra };
+      if (noThink) body.think = false;
+      const res = await fetch(OLLAMA + '/api/chat', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body),
+      });
+      const raw = await res.text();
+      let json = {}; try { json = JSON.parse(raw); } catch (e) {}
+      if (!res.ok) throw new Error(json.error || raw);
+      return json.message?.content || '';
+    };
+    let out;
+    try { out = await attempt(true); } catch (e) { out = await attempt(false); }
+    return out.replace(/<think>[\s\S]*?(<\/think>|$)/g, '').trim();
+  }
+
+  // ---------- Saving memory ----------
+  // Two ways in:
+  //  1. Explicit commands ("remember …", "forget …", "call me …", "your name is …") run BEFORE the reply, so the
+  //     reply already uses the new memory. An explicit "remember …" is always stored, even if the model fails.
+  //  2. Any other message that sounds personal is checked by the model AFTER the reply, in the background.
+  const LEAD = '^\\s*(?:(?:please|pls|hey|ok(?:ay)?|and|also|btw)[,\\s]+)*';
+  const REMEMBER_CMD = new RegExp(LEAD + "(?:remember|don'?t forget|do not forget|from now on|keep in mind|make a note(?: that)?|note that|memori[sz]e|(?:save|store|add|put) (?:this|that|it)?\\s*(?:to|in|into) (?:your )?memory)\\b[\\s:,\\-]*(?:that\\b[\\s:,\\-]*)?([\\s\\S]+)$", 'i');
+  const FORGET_CMD = new RegExp(LEAD + "(?:forget\\b(?!\\s+(?:it|about it)\\b)|stop remembering\\b|(?:remove|delete|erase)\\b[^.\\n]*\\bmemor)", 'i');
+  const NAME_CMD = new RegExp(LEAD + "(?:from now on\\b|(?:my name is|call me|your name is|you(?:'re| are) (?:now )?(?:called|named)|i(?:'ll| will) call you|rename you)\\b)", 'i');
+  const MEM_NOW = t => REMEMBER_CMD.test(t) || FORGET_CMD.test(t) || NAME_CMD.test(t);
+
+  // Messages that may contain something worth keeping (the model makes the final call, so this gate is wide on purpose)
+  const MEM_HINT = /\b(remember|forget|from now on|always|never|call me|my name|your name|i prefer|i like|i love|i hate|i enjoy|i live|i work|i study|i want you|i need you|i'?m (?:a|an|in|from|studying|learning|using|working|taking|currently|into|still|now)|i am (?:a|an|in|from|studying|learning|using|working|currently)|i (?:use|own|have|got|bought|switched|moved|play|speak|prefer|usually|always|never|am)|i'?ve (?:got|been|moved|switched|started)|my (?:\w+ ){0,2}(?:is|are|was|name|laptop|pc|computer|phone|setup|course|school|job|class|favou?rite|goal|project|major|birthday|age|gpu|cpu|os)|we (?:use|have|are)|you (?:should|must|need to|have to|are|will|can't|cannot)|you'?re|your (?:name|job|role|tone|style|replies|answers)|don'?t (?:call|use|say|write|reply|answer|talk|explain)|stop (?:calling|using|saying|writing|replying)|no longer|not anymore|correction|instead of|rather than)\b/i;
+  // A DELETE action is only allowed when the user's own words ask for removal
+  const FORGET_HINT = /\b(forget|remove|delete|erase|drop|wipe|clear|stop (remembering|using)|do not remember|don'?t remember)\b/i;
+
+  const MEM_OPS = ['ADD', 'UPDATE', 'DELETE'];
+  const MEM_MAX_FACT = 500;
+  const memKey = s => String(s || '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  // 0..1 word overlap, used to skip near-duplicates
+  const sim = (a, b) => {
+    const A = new Set(wordsOf(a)), B = new Set(wordsOf(b));
+    if (!A.size || !B.size) return 0;
+    let n = 0; A.forEach(w => { if (B.has(w)) n++; });
+    return n / Math.max(A.size, B.size);
+  };
+
+  // Memory changes run one after another, so a new message never reads a half-updated list
+  let memoryQueue = Promise.resolve();
+  // Ollama reloads a model when num_ctx changes, so the memory call reuses the chat call's num_ctx.
+  // Optional: set a small model for memory only, e.g. localStorage.setItem('ollama_memory_model', 'llama3.2:3b')
+  let lastNumCtx = 0;
+  const memoryModel = () => (localStorage.getItem('ollama_memory_model') || '').trim();
+  function runMemoryTask(task) {
+    const p = memoryQueue.then(task);
+    memoryQueue = p.catch(() => {});
+    return p;
+  }
+
+  // Re-read the saved memory from the server; on failure keep what we have (never wipe the list)
+  async function refreshMemory() {
+    try { memories = (await memApi('GET')).items || []; renderMemory(); } catch (e) { /* keep current list */ }
+  }
+
+  // Turns the raw model output into a clean list of actions. Throws on anything that is not JSON.
+  function parseMemoryActions(raw) {
+    const s = String(raw || '').replace(/```(?:json)?/gi, '').trim();
+    let data;
+    try { data = JSON.parse(s); }
+    catch (e) {
+      const a = s.search(/[\[{]/), b = Math.max(s.lastIndexOf('}'), s.lastIndexOf(']'));
+      if (a === -1 || b <= a) throw new Error('memory extractor did not return JSON');
+      data = JSON.parse(s.slice(a, b + 1));
+    }
+    const list = Array.isArray(data) ? data : Array.isArray(data && data.actions) ? data.actions : (data && data.op ? [data] : []);
+    const out = [];
+    for (const a of list.slice(0, 6)) {
+      if (!a || typeof a !== 'object') continue;
+      const op = String(a.op || '').trim().toUpperCase();
+      if (!MEM_OPS.includes(op)) continue;
+      const id = a.id == null ? '' : String(a.id).trim().replace(/^\[|\]$/g, '');
+      const val = a.fact ?? a.text ?? a.memory;
+      const fact = typeof val === 'string' ? val.replace(/\s+/g, ' ').trim() : '';
+      if ((op === 'ADD' || op === 'UPDATE') && (!fact || fact.length > MEM_MAX_FACT)) continue;
+      if (op === 'DELETE' && !id) continue;
+      out.push({ op, id, fact });
+    }
+    return out;
+  }
+
+  // Constrains the model's answer to this shape (Ollama structured output); older Ollama versions fall back to plain JSON mode
+  const MEM_SCHEMA = {
+    type: 'object',
+    properties: { actions: { type: 'array', items: { type: 'object', properties: {
+      op: { type: 'string', enum: MEM_OPS }, id: { type: 'string' }, fact: { type: 'string' },
+    }, required: ['op'] } } },
+    required: ['actions'],
+  };
+
+  const MEM_SYSTEM = [
+    "You maintain the long-term memory of a chat assistant. You get the CURRENT MEMORY (each entry starts with its id in square brackets) and the user's NEW MESSAGE. Decide what must change and answer with JSON only.",
+    "",
+    'Output shape: {"actions":[ ... ]}. Each action is one of:',
+    '{"op":"ADD","fact":"..."}  a new lasting fact',
+    '{"op":"UPDATE","id":"...","fact":"..."}  replaces an existing entry (the complete corrected fact)',
+    '{"op":"DELETE","id":"..."}  removes an existing entry',
+    'Nothing to change: {"actions":[]}',
+    "",
+    "SAVE these, even when mentioned casually: the user's name, age, school, course, job, location, languages, devices and hardware, software and tools, hobbies, ongoing projects, goals; lasting preferences; and instructions about how the assistant must behave, reply or be called (including its name).",
+    "DO NOT SAVE: questions, requests for help, the task being worked on right now, one-off or temporary details, file contents, small talk, anything about this conversation itself, sensitive personal data (unless the user explicitly says to remember it).",
+    "",
+    "RULES:",
+    '1. Each fact is one short, standalone sentence in the third person. Facts about the assistant start with "The assistant"; facts about the user start with "The user".',
+    "2. One subject per entry. Unrelated facts in one message become separate ADD actions.",
+    "3. If CURRENT MEMORY already has an entry about the same subject (name, laptop, course, language rule...), use UPDATE with that entry's id and the complete new fact. Never ADD a second entry for the same subject.",
+    '4. A new fact contains only the new value. Never write "not X", "no longer X", "previously" or "changed from".',
+    "5. DELETE only when the user asks to forget or remove something, and only the entry it is about. Use only ids that appear in CURRENT MEMORY.",
+    "6. Keep exact names, numbers, versions and paths. Never invent details.",
+    "7. At most 4 actions. No explanations, no Markdown: JSON only.",
+  ].join('\n');
+
+  // Returns a validated action list ([] = nothing to change). Tries structured output first, then plain JSON mode.
+  async function extractFact(text) {
+    const current = memories.length ? memories.map(m => '[' + m.id + '] ' + String(m.text).replace(/\s*\n\s*/g, ' / ')).join('\n') : '(empty)';
+    const messages = [
+      { role: 'system', content: MEM_SYSTEM },
+      { role: 'user', content: 'CURRENT MEMORY:\n' + current + '\n\nNEW MESSAGE:\n' + String(text).slice(0, 1500) },
+    ];
+    let lastErr;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const mm = memoryModel();
+        const options = { temperature: 0, num_predict: 400, num_ctx: mm ? 4096 : (lastNumCtx || 16384) };
+        const extra = { format: attempt === 0 ? MEM_SCHEMA : 'json', options };
+        if (mm) extra.model = mm;
+        return parseMemoryActions(await ollamaOnce(messages, extra));
+      } catch (e) { lastErr = e; }
+    }
+    throw lastErr || new Error('memory extractor failed');
+  }
+
+  // Last resort for an explicit "remember …" when the model failed or found nothing: keep the user's own words
+  function fallbackFact(text) {
+    const t = String(text || '').trim();
+    if (/\?\s*$/.test(t)) return '';
+    const m = REMEMBER_CMD.exec(t);
+    if (!m) return '';
+    const rest = m[1].trim().replace(/\s+/g, ' ');
+    if (rest.length < 3 || /^(when|how|what|why|who|where|if|whether)\b/i.test(rest)) return '';
+    return ('The user said: "' + rest.replace(/"/g, "'") + '"').slice(0, MEM_MAX_FACT);
+  }
+
+  // Applies validated actions to the stored memory. Safe to run twice: duplicates and missing ids are skipped.
+  // Returns { done: [records], notes: [messages for the user], failed: [errors] }.
+  async function applyMemoryActions(actions, text) {
+    const res = { done: [], notes: [], failed: [] };
+    const touched = new Set();
+    const allowDelete = FORGET_HINT.test(text);
+    const deletes = actions.filter(a => a.op === 'DELETE');
+    // Refuse bulk deletes: more than 3 at once, or wiping the whole list. "Clear all memory" in Settings does that.
+    const bulk = deletes.length > 3 || (memories.length > 1 && deletes.length >= memories.length);
+
+    // "The assistant's name is X" / "The user's name is X": only one entry per subject, the newest statement wins
+    const nameKey = f => { const m = /^the (assistant|user)(?:'s|\u2019s) name is\b/i.exec(String(f).trim()); return m ? m[1].toLowerCase() : ''; };
+    const addFact = async fact => {
+      const k = memKey(fact);
+      const nk = nameKey(fact);
+      if (nk) {
+        const same = memories.filter(m => nameKey(m.text) === nk);
+        if (same.length) {
+          const keep = same.find(m => memKey(m.text) === k) || same[same.length - 1];
+          const stale = same.filter(m => m !== keep);
+          if (memKey(keep.text) !== k) {
+            const json = await memApi('PUT', '/' + keep.id, { text: fact });
+            memories = json.items || memories; renderMemory();
+            res.done.push({ op: 'UPDATE', id: keep.id, fact, old: keep.text });
+          }
+          for (const m of stale) {
+            const json = await memApi('DELETE', '/' + m.id);
+            memories = json.items || memories; renderMemory();
+            res.done.push({ op: 'UPDATE', id: m.id, fact, old: m.text });
+          }
+          touched.add(String(keep.id));
+          return;
+        }
+      }
+      if (memories.some(m => memKey(m.text) === k || sim(m.text, fact) >= 0.85)) return;   // already stored
+      const before = new Set(memories.map(m => String(m.id)));
+      const json = await memApi('POST', '', { text: fact });
+      memories = json.items || memories; renderMemory();
+      if (!json.added) return;
+      const item = memories.find(m => !before.has(String(m.id)));
+      res.done.push({ op: 'ADD', id: item ? item.id : null, fact });
+      if (item) touched.add(String(item.id));
+    };
+
+    for (const a of actions) {
+      try {
+        if (a.op === 'ADD' || (a.op === 'UPDATE' && nameKey(a.fact))) { await addFact(a.fact); continue; }
+
+        const target = memories.find(m => String(m.id) === a.id);
+        // The model named an entry that does not exist: an UPDATE still carries a real fact, so store it as new
+        if (!target) { if (a.op === 'UPDATE' && a.fact) await addFact(a.fact); continue; }
+        if (touched.has(String(target.id))) continue;
+        touched.add(String(target.id));
+
+        if (a.op === 'UPDATE') {
+          const k = memKey(a.fact);
+          if (memKey(target.text) === k) continue;                          // already up to date
+          const twin = memories.find(m => m !== target && memKey(m.text) === k);
+          if (twin) {                                                       // new value already stored elsewhere: just drop the old entry
+            const json = await memApi('DELETE', '/' + target.id);
+            memories = json.items || memories; renderMemory();
+            res.done.push({ op: 'UPDATE', id: target.id, fact: a.fact, old: target.text });
+            continue;
+          }
+          const json = await memApi('PUT', '/' + target.id, { text: a.fact });
+          memories = json.items || memories; renderMemory();
+          res.done.push({ op: 'UPDATE', id: target.id, fact: a.fact, old: target.text });
+          continue;
+        }
+
+        if (a.op === 'DELETE') {
+          if (!allowDelete) { res.notes.push('Nothing was deleted: say "forget …" if you want a memory removed.'); continue; }
+          if (bulk) { res.notes.push('That would remove several memories, so nothing was deleted. Use Settings to remove them.'); continue; }
+          const json = await memApi('DELETE', '/' + target.id);
+          memories = json.items || memories; renderMemory();
+          res.done.push({ op: 'DELETE', id: target.id, old: target.text });
+        }
+      } catch (e) { res.failed.push(a.op + ': ' + e.message); }
+    }
+    return res;
+  }
+
+  // After a fact is replaced or removed, the chat messages that taught the old value must not stay in the
+  // model's context (that is what made the AI say "my name is Tota, not Teto"). They are flagged, not deleted.
+  function supersedeMessages(id, keepMsg) {
+    chats.forEach(c => c.messages.forEach(m => {
+      if (m !== keepMsg && m.role === 'user' && (m.memoryOps || []).some(r => String(r.id) === String(id))) m.superseded = true;
+    }));
+  }
+  const isStaleMsg = m => m && m.role === 'user' && m.superseded && !(m.files && m.files.length) && !(m.images && m.images.length);
+
+  // `pre` = running before the reply (explicit command): the thread is repainted afterwards by send()
+  function autoRemember(userMsg, chat, text, pre) {
+    if (userMsg.memoryDone) return Promise.resolve();
+    return runMemoryTask(async () => {
+      $('status').textContent = 'Updating memory…';
+      let actions = [], failure = '';
+      try { actions = await extractFact(text); }
+      catch (e) { failure = e.message || 'the model did not answer'; }
+
+      // An explicit "remember …" is never lost, even when the model failed or decided there was nothing to save
+      if (!FORGET_CMD.test(text) && !actions.some(a => a.op === 'ADD' || a.op === 'UPDATE')) {
+        const fb = fallbackFact(text);
+        if (fb) actions.push({ op: 'ADD', id: '', fact: fb });
+      }
+
+      if ($('status').textContent === 'Updating memory…') $('status').textContent = '';
+      if (!actions.length) {
+        if (failure) { $('status').textContent = 'Memory left unchanged: ' + failure; return; }   // retried after the reply
+        if (FORGET_CMD.test(text)) toast('Nothing in memory matches that');
+        userMsg.memoryDone = true; save(); return;
+      }
+
+      const res = await applyMemoryActions(actions, text);
+      if (res.done.length) {
+        userMsg.memoryOps = (userMsg.memoryOps || []).concat(res.done);
+        userMsg.memory = res.done.map(r => r.op === 'DELETE' ? 'Forgot: ' + r.old : r.fact).join('\n');
+        res.done.forEach(r => {
+          if (r.op === 'UPDATE') supersedeMessages(r.id, userMsg);   // keep the message that holds the new value
+          if (r.op === 'DELETE') supersedeMessages(r.id, null);      // also hides the "forget it" message itself
+        });
+        toast(res.done.some(r => r.op === 'DELETE') ? 'Memory removed' : res.done.some(r => r.op === 'UPDATE') ? 'Memory replaced' : 'Memory updated');
+      } else if (res.notes.length) toast(res.notes[0]);
+      if (!res.failed.length) userMsg.memoryDone = true;
+      save();
+      if (res.failed.length) $('status').textContent = 'Could not save memory: ' + res.failed[0];
+      if (currentId === chat.id && !controller) renderThread();
+    });
+  }
+
+  // One-time clean-up: older versions saved several facts as one multi-line entry. Split them so each fact can be
+  // replaced or deleted alone. New entries are added first and the original is removed only after all were stored.
+  async function migrateMemory() {
+    if (localStorage.getItem('ollama_memory_split_v1') === '1') return;
+    return runMemoryTask(async () => {
+      try {
+        const clean = l => l.replace(/^\s*(?:[-*•]|\d+[.)])\s*/, '').trim();
+        for (const m of [...memories]) {
+          const lines = String(m.text).split(/\n+/).map(clean).filter(l => l.length >= 3);
+          if (lines.length < 2) continue;
+          for (const l of lines) {
+            if (memories.some(x => memKey(x.text) === memKey(l))) continue;
+            const json = await memApi('POST', '', { text: l });
+            memories = json.items || memories;
+          }
+          const json = await memApi('DELETE', '/' + m.id);
+          memories = json.items || memories;
+        }
+        localStorage.setItem('ollama_memory_split_v1', '1');
+        renderMemory();
+      } catch (e) { /* flag not set: it simply tries again next time; already-split lines are skipped */ }
+    });
+  }
+
+  // ---------- AI file editing ----------
+  const handles = new Map();   // "chatId|name" -> file handle (this session only)
+  const hkey = (chatId, name) => chatId + '|' + name.toLowerCase();
+  const baseName = n => String(n).split(/[\\/]/).pop();
+
+  // Finds the chat file the model means. Tolerates path prefixes, quotes, case, spaces/underscores
+  // and a missing extension. With `single`, a chat that holds exactly one file always resolves to it.
+  function findWork(chat, name, single) {
+    const keys = Object.keys((chat && chat.work) || {});
+    if (!keys.length) return null;
+    const clean = String(name).trim().replace(/^["'`]+|["'`]+$/g, '').replace(/^\.?[\\/]+/, '');
+    const low = clean.toLowerCase(), b = baseName(low);
+    const norm = x => x.replace(/[\s_\-]+/g, '');
+    const lowBase = k => baseName(k.toLowerCase());
+    let hit = keys.find(k => k.toLowerCase() === low) || keys.find(k => lowBase(k) === b) ||
+              keys.find(k => norm(lowBase(k)) === norm(b));
+    if (!hit && !/\.[^.]+$/.test(b)) {
+      const stem = x => x.replace(/\.[^.]+$/, '');
+      const c = keys.filter(k => norm(stem(lowBase(k))) === norm(b));
+      if (c.length === 1) hit = c[0];
+    }
+    if (!hit && single && keys.length === 1) hit = keys[0];
+    return hit || null;
+  }
+
+  // Re-reads files that were opened from disk, so the model always works on the latest saved version
+  const askedRead = new Set();
+  async function refreshFromDisk(chat) {
+    let changed = false;
+    for (const name of Object.keys(chat.work || {})) {
+      if (docFmt(name)) continue;
+      const key = hkey(chat.id, name), h = handles.get(key);
+      if (!h) continue;
+      try {
+        let perm = await h.queryPermission({ mode: 'read' });
+        if (perm !== 'granted' && !askedRead.has(key)) { askedRead.add(key); perm = await h.requestPermission({ mode: 'read' }); }
+        if (perm !== 'granted') continue;
+        const raw = await (await h.getFile()).text();
+        if (raw.includes('\u0000')) continue;
+        const text = raw.replace(/\r\n/g, '\n');
+        if (text !== chat.work[name].text) { chat.work[name] = { text, crlf: raw.includes('\r\n') }; changed = true; }
+      } catch (e) { /* moved or deleted: keep the stored copy */ }
+    }
+    if (changed) { touchWork(chat); save(); }
+    return changed;
+  }
+
+  // Strip below the chat showing which files belong to this chat
+  function renderChatFiles() {
+    const el = $('chatFiles'), chat = getChat();
+    const names = Object.keys((chat && chat.work) || {});
+    el.innerHTML = '';
+    el.style.display = names.length ? 'flex' : 'none';
+    if (!names.length) return;
+    const lab = document.createElement('small'); lab.textContent = 'Files in this chat'; el.appendChild(lab);
+    names.forEach(n => {
+      const chip = document.createElement('div');
+      chip.className = 'chip';
+      chip.innerHTML = '📄<span></span><b title="Remove from this chat">×</b>';
+      chip.querySelector('span').textContent = baseName(n);
+      chip.title = n;
+      chip.querySelector('b').onclick = async () => {
+        if (!await ask({ title: 'Remove file from this chat?', text: baseName(n) + ' will no longer be visible to the AI in this chat. The file on your computer is not touched.', ok: 'Remove', danger: true })) return;
+        delete chat.work[n]; dropHandle(hkey(chat.id, n)); touchWork(chat); save(); renderChatFiles();
+      };
+      el.appendChild(chip);
+    });
+  }
+
+
+
+function fileSystemPrompt(chat) {
+  const work = chat?.work || {};
+  const names = Object.keys(work);
+  const maker = [
+    "FILE MAKER: you can create files for the user. When the user asks you to make, create, write or generate a file (for example \"make a python file that ...\"), write the complete file in ONE block in exactly this format:",
+    "```file:filename.ext",
+    "(the full content of the file)",
+    "```",
+    "Rules for file blocks:",
+    "1. The opening line starts with three backticks, then file: and the file name with the right extension (hello.py for Python, app.js, index.html, notes.txt). Nothing else on that line.",
+    "2. Put the whole, working file inside the block. No placeholders, no \"rest of the code here\", no explanations inside the code except normal comments.",
+    "3. Only a ```file: block creates a file. A normal ```python block is just a snippet in the chat, so do not use it when the user wants a file.",
+    "4. If the file itself contains ``` (for example a Markdown file), open and close the block with four backticks instead of three.",
+    "5. Outside the block write at most two short sentences: what the file does and how to run it. Never repeat the code outside the block.",
+    "6. Text files only (code, txt, md, csv, json, html, ...). You cannot create pdf, docx or xlsx files.",
+    "7. Several files means several blocks, one per file.",
+    "8. To change a file, write the full new version in a new ```file: block with the same name.",
+    "9. If the user only asks a question or wants a short snippet, answer normally without a file block.",
+    "10. If you do not know yet what the file should contain, ask first, following your rules above."
+  ].join("\n");
+  if (!names.length) return maker;
+  return [
+    maker,
+    "",
+    "CURRENT FILES in this chat (attached by the user or made by you). You can read and discuss them. You cannot edit them in place: to change one, write the full new version in a ```file: block with the same name.",
+    ...names.map(n => '<file name="' + n + '">\n' + String(work[n].text ?? "") + '\n</file>')
+  ].join("\n");
+}
+
+  // Past file blocks are not re-sent to the model (it already sees the current files)
+  function stripFileBlocks(text) {
+    return text.replace(/^(`{3,})(file|edit|append):([^\n]*)\n[\s\S]*?(?:^\1`*[ \t]*$|(?![\s\S]))/gm,
+      (all, fence, kind, name) => kind === 'file' ? '[created file: ' + name.trim() + ']' : (all.length < 3000 ? all : ''));
+  }
+
+  const docFmt = n => { const e = String(n).split('.').pop().toLowerCase(); return e === 'pdf' || e === 'docx' || e === 'xlsx' ? e : null; };
+
+  async function xlsxToText(file) {
+    if (!window.XLSX) throw new Error('SheetJS failed to load (check your internet connection)');
+    const wb = XLSX.read(await file.arrayBuffer(), { type: 'array' });
+    return wb.SheetNames.map(n => '## SHEET: ' + n + '\n' + XLSX.utils.sheet_to_csv(wb.Sheets[n]).trim()).join('\n\n');
+  }
+
+  // ---------- Settings ----------
+  function openSettings() { closeSidebar(); renderMemory(); $('settings').classList.add('show'); }
+  function closeSettings() { $('settings').classList.remove('show'); }
+  $('openSettings').onclick = openSettings;
+  $('closeSettings').onclick = closeSettings;
+  $('settings').onclick = e => { if (e.target === $('settings')) closeSettings(); };
+  window.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if (dlgResolve) dlgResolve(null);
+    else if ($('modelMenu').classList.contains('show')) closeModelMenu();
+    else closeSettings();
+  });
+
+  $('rulesText').value = getRules();
+  $('rulesText').oninput = () => localStorage.setItem(RULES_KEY, $('rulesText').value);
+  $('rulesReset').onclick = async () => {
+    if (!await ask({ title: 'Reset rules?', text: 'The rules will go back to the default text.', ok: 'Reset' })) return;
+    localStorage.removeItem(RULES_KEY);
+    $('rulesText').value = DEFAULT_RULES;
+  };
+
+  $('autoMem').checked = autoMemory;
+  $('autoMem').onchange = () => {
+    autoMemory = $('autoMem').checked;
+    localStorage.setItem('ollama_auto_memory', autoMemory ? '1' : '0');
+  };
+
+  async function manualAdd() {
+    const t = $('memInput').value.trim();
+    if (!t) return;
+    try {
+      const added = await addMemory(t);
+      $('memInput').value = '';
+      if (!added) toast('Already saved');
+    } catch (e) { $('status').textContent = e.message; }
+  }
+  $('memAdd').onclick = manualAdd;
+  $('memInput').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); manualAdd(); } });
+  $('memClear').onclick = async () => {
+    if (!await ask({ title: 'Clear all memory?', text: 'Everything saved in memory will be permanently deleted.', ok: 'Clear all', danger: true })) return;
+    try { memories = (await memApi('DELETE')).items; renderMemory(); toast(); }
+    catch (e) { $('status').textContent = e.message; }
+  };
+
+  // ---------- Sidebar / history ----------
+  function groupOf(ts) {
+    const d = new Date(); d.setHours(0, 0, 0, 0);
+    const day = 86400000;
+    if (ts >= d.getTime()) return 'Today';
+    if (ts >= d.getTime() - day) return 'Yesterday';
+    if (ts >= d.getTime() - 7 * day) return 'Previous 7 days';
+    return 'Older';
+  }
+
+  function renderHistory() {
+    const box = $('history');
+    box.innerHTML = '';
+    const sorted = [...chats].sort((a, b) => b.updated - a.updated);
+    let last = '';
+    sorted.forEach(c => {
+      const g = groupOf(c.updated);
+      if (g !== last) {
+        const l = document.createElement('div');
+        l.className = 'group-label'; l.textContent = g; box.appendChild(l); last = g;
+      }
+      const item = document.createElement('div');
+      item.className = 'chat-item' + (c.id === currentId ? ' active' : '');
+      item.innerHTML = '<span class="t"></span><span class="acts"><button class="ren" title="Rename"></button><button class="del" title="Delete"></button></span>';
+      item.querySelector('.ren').innerHTML = ic(P.edit, 15);
+      item.querySelector('.del').innerHTML = ic(P.trash, 15);
+      item.querySelector('.t').textContent = c.title;
+      item.onclick = () => openChat(c.id);
+      item.querySelector('.ren').onclick = async e => {
+        e.stopPropagation();
+        const name = await ask({ title: 'Rename chat', value: c.title, ok: 'Save' });
+        if (name && name.trim()) { c.title = name.trim(); save(); renderHistory(); }
+      };
+      item.querySelector('.del').onclick = async e => {
+        e.stopPropagation();
+        if (!await ask({ title: 'Delete chat?', text: 'This chat will be permanently deleted.', ok: 'Delete', danger: true })) return;
+        chats = chats.filter(x => x.id !== c.id);
+        purgeChatFiles(c.id);
+        save();
+        if (c.id === currentId) newChat(); else renderHistory();
+      };
+      box.appendChild(item);
+    });
+  }
+
+  function openChat(id) {
+    if (controller) controller.abort();
+    currentId = id;
+    renderHistory(); renderThread(); closeSidebar();
+  }
+
+  function newChat() {
+    if (controller) controller.abort();
+    currentId = null; pending = [];
+    renderChips(); renderHistory(); renderThread(); closeSidebar();
+    $('prompt').focus();
+  }
+
+  $('newChat').onclick = newChat;
+  $('clearAll').onclick = async () => {
+    if (!await ask({ title: 'Delete all chats?', text: 'Every chat in your history will be permanently deleted.', ok: 'Delete all', danger: true })) return;
+    chats.forEach(c => purgeChatFiles(c.id));
+    chats = []; save(); newChat();
+  };
+  $('menu').onclick = () => $('sidebar').classList.add('open');
+  const closeSidebar = () => $('sidebar').classList.remove('open');
+  $('overlay').onclick = closeSidebar;
+
+  // ---------- Thread rendering ----------
+  function msgEl(m) {
+    const el = document.createElement('div');
+    el.className = 'msg ' + m.role;
+    if (m.role === 'user') {
+      if (m.images && m.images.length) {
+        const t = document.createElement('div'); t.className = 'thumbs';
+        m.images.forEach(b64 => { const i = document.createElement('img'); i.src = 'data:image/jpeg;base64,' + b64; t.appendChild(i); });
+        el.appendChild(t);
+      } else if (m.imageCount) {
+        const f = document.createElement('div'); f.className = 'filechip'; f.textContent = '🖼 ' + m.imageCount + ' image(s)';
+        el.appendChild(f);
+      }
+      (m.files || []).forEach(n => { const f = document.createElement('div'); f.className = 'filechip'; f.textContent = '📄 ' + n; el.appendChild(f); });
+      if (m.content) { const b = document.createElement('div'); b.className = 'bubble'; b.textContent = m.content; el.appendChild(b); }
+      if (m.memory) {
+        const tag = document.createElement('div'); tag.className = 'memtag';
+        tag.innerHTML = '<span class="ico">' + ic(P.circle, 13) + '</span> Memory updated';
+        tag.title = m.memory;
+        tag.onclick = openSettings;
+        el.appendChild(tag);
+      }
+    } else {
+      el.innerHTML = '</div><div class="body"><details class="think" hidden><summary><span class="think-sum">Thoughts</span></summary><div class="think-text"></div></details><div class="content"></div></div>';
+      paintBot(el.querySelector('.body'), m, false);
+    }
+    return el;
+  }
+
+  function renderThread() {
+    renderChatFiles();
+    const thread = $('thread');
+    thread.innerHTML = '';
+    const chat = getChat();
+    if (!chat || !chat.messages.length) {
+      thread.innerHTML = '<div class="empty"><h2>What can I help with?</h2></div>';
+      return;
+    }
+    chat.messages.forEach(m => thread.appendChild(msgEl(m)));
+    scrollDown(true);
+  }
+
+  // Repainting the streaming answer replaces its DOM, which wipes any text selection.
+  // So while the user is selecting (or has text selected), the repaint waits.
+  let pointerDown = false;
+  $('messages').addEventListener('pointerdown', () => { pointerDown = true; });
+  ['pointerup', 'pointercancel', 'dragend'].forEach(ev => window.addEventListener(ev, () => { pointerDown = false; }));
+  function holdPaint() {
+    if (pointerDown) return true;
+    const s = window.getSelection();
+    if (!s || s.isCollapsed || !s.rangeCount) return false;
+    const t = $('thread');
+    return t.contains(s.anchorNode) || t.contains(s.focusNode);
+  }
+  function whenFree(fn) {
+    if (!holdPaint()) return fn();
+    const iv = setInterval(() => { if (!holdPaint()) { clearInterval(iv); fn(); } }, 250);
+  }
+
+  // Follow the stream only while the user is at the bottom; scrolling up stops it
+  let stick = true;
+  function scrollDown(force) {
+    const s = $('messages');
+    if (force) stick = true;
+    if (stick) s.scrollTop = s.scrollHeight;
+  }
+  (() => {
+    const s = $('messages');
+    const atBottom = () => s.scrollHeight - s.scrollTop - s.clientHeight < 40;
+    s.addEventListener('scroll', () => { stick = atBottom(); }, { passive: true });
+    s.addEventListener('wheel', e => { if (e.deltaY < 0) stick = false; }, { passive: true });
+    s.addEventListener('touchmove', () => { if (!atBottom()) stick = false; }, { passive: true });
+  })();
+
+  // ---------- File conversion ----------
+  function imageToBase64(file, maxSize = 1024) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const url = URL.createObjectURL(file);
+      img.onload = () => {
+        const scale = Math.min(1, maxSize / Math.max(img.width, img.height));
+        const c = document.createElement('canvas');
+        c.width = Math.round(img.width * scale); c.height = Math.round(img.height * scale);
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(url);
+        const dataUrl = c.toDataURL('image/jpeg', 0.85);
+        resolve({ base64: dataUrl.split(',')[1], preview: dataUrl });
+      };
+      img.onerror = reject;
+      img.src = url;
+    });
+  }
+
+  async function pdfToText(file) {
+    const pdf = await pdfjsLib.getDocument({ data: await file.arrayBuffer() }).promise;
+    let text = '';
+    for (let i = 1; i <= pdf.numPages; i++) {
+      const page = await pdf.getPage(i);
+      const content = await page.getTextContent();
+      text += content.items.map(it => it.str + (it.hasEOL ? '\n' : ' ')).join('').replace(/[ \t]+\n/g, '\n').trim() + '\n\n';
+    }
+    return text.trim();
+  }
+
+  async function docxToText(file) {
+    return (await mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() })).value;
+  }
+
+  async function addFile(file, handle) {
+    const ext = file.name.split('.').pop().toLowerCase();
+    $('status').textContent = 'Reading ' + file.name + '...';
+    try {
+      if (file.type.startsWith('image/') && ext !== 'svg') {
+        const { base64, preview } = await imageToBase64(file);
+        pending.push({ name: file.name || 'image', kind: 'image', data: base64, preview });
+      } else if (ext === 'pdf' || ext === 'docx') {
+        // Read as text and editable; the edited result is rebuilt as a new PDF / DOCX on download
+        const data = (ext === 'pdf' ? await pdfToText(file) : await docxToText(file)).replace(/\r\n/g, '\n').trim();
+        if (!data) throw new Error('no readable text found (scanned or image-only file?)');
+        pending.push({ name: file.name, kind: 'text', editable: true, handle: null, crlf: false, data });
+      } else if (ext === 'xlsx' || ext === 'xls') {
+        const data = (await xlsxToText(file)).trim();
+        if (!data) throw new Error('no data found in this workbook');
+        pending.push({ name: file.name.replace(/\.xls$/i, '.xlsx'), kind: 'text', editable: true, handle: null, crlf: false, data });
+      } else {
+        // Any other file is treated as editable text
+        const raw = await file.text();
+        if (raw.includes('\u0000')) throw new Error('binary files are not supported');
+        pending.push({
+          name: file.name, kind: 'text', editable: true, handle: handle || null,
+          crlf: raw.includes('\r\n'), data: raw.replace(/\r\n/g, '\n'),
+        });
+      }
+      $('status').textContent = '';
+    } catch (e) {
+      $('status').textContent = 'Could not read ' + file.name + ': ' + e.message;
+    }
+    renderChips();
+  }
+
+  function renderChips() {
+    $('chips').innerHTML = '';
+    pending.forEach((a, i) => {
+      const chip = document.createElement('div');
+      chip.className = 'chip';
+      chip.innerHTML = (a.preview ? `<img src="${a.preview}">` : '📄') + '<span></span><b>×</b>';
+      chip.querySelector('span').textContent = a.name;
+      chip.querySelector('b').onclick = () => { pending.splice(i, 1); renderChips(); };
+      $('chips').appendChild(chip);
+    });
+    updateSend();
+  }
+
+  // ---------- Sending ----------
+  function updateSend() {
+    const has = $('prompt').value.trim() || pending.length;
+    $('send').disabled = !controller && !has;
+    $('send').innerHTML = controller ? ic(P.stop, 14) : ic(P.up, 18);
+  }
+
+  const errMsg = t => { try { return JSON.parse(t).error || t; } catch (e) { return t; } };
+
+  // Opens the chat stream; if the model rejects `think`, retries once without it
+  async function openStream(body, signal) {
+    const post = () => fetch(OLLAMA + '/api/chat', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body), signal,
+    });
+    let res = await post();
+    if (!res.ok) {
+      const txt = await res.text();
+      if ('think' in body && /think/i.test(txt)) {
+        delete body.think;
+        $('status').textContent = "This model doesn't support thinking";
+        res = await post();
+        if (!res.ok) throw new Error(errMsg(await res.text()));
+        return res;
+      }
+      throw new Error(errMsg(txt));
+    }
+    return res;
+  }
+
+  async function send() {
+    if (controller) { controller.abort(); return; }
+    if (preparing) return;
+    const text = $('prompt').value.trim();
+    if (!text && !pending.length) return;
+
+    let chat = getChat();
+    if (!chat) {
+      chat = { id: Date.now().toString(36), title: 'New chat', updated: Date.now(), messages: [] };
+      chats.unshift(chat); currentId = chat.id;
+    }
+    if (!chat.messages.length) chat.title = (text || pending[0].name).slice(0, 40);
+
+    // Text-based files are merged into the prompt; images go in the images array
+    // Editable files (including PDF/DOCX text) live in chat.work and are always sent in their latest version
+    chat.work = chat.work || {};
+    pending.filter(a => a.editable).forEach(a => {
+      // Re-attaching a file with the same name replaces the stored copy
+      const k = Object.keys(chat.work).find(x => x.toLowerCase() === a.name.toLowerCase()) || a.name;
+      chat.work[k] = { text: a.data, crlf: !!a.crlf };
+      if (a.handle) setHandle(hkey(chat.id, k), a.handle); else dropHandle(hkey(chat.id, k));
+    });
+    touchWork(chat); flushWork();
+    const textParts = pending.filter(a => a.kind === 'text').map(a => a.editable
+      ? `[Attached file: ${a.name}]`
+      : `[File: ${a.name}]\n${a.data}\n[End of ${a.name}]`);
+    const userMsg = {
+      role: 'user',
+      content: text,
+      ctx: [...textParts, text || 'Describe these files.'].join('\n\n'),
+      images: pending.filter(a => a.kind === 'image').map(a => a.data),
+      files: pending.filter(a => a.kind === 'text').map(a => a.name),
+    };
+    const botMsg = { role: 'assistant', content: '', thinking: '', noThink: !thinkOn, id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6) };
+    chat.messages.push(userMsg, botMsg);
+    chat.updated = Date.now();
+
+    $('prompt').value = ''; autoGrow(); pending = []; renderChips();
+    renderHistory(); renderThread();
+
+    // Explicit memory commands ("remember …", "forget …", "call me …") are handled BEFORE the reply, so the reply already knows
+    if (autoMemory && text && MEM_NOW(text)) {
+      preparing = true;
+      try { await autoRemember(userMsg, chat, text, true); } catch (e) { /* the retry after the reply covers it */ } finally { preparing = false; }
+    }
+
+    const body = $('thread').lastElementChild.querySelector('.body');
+    body.querySelector('.content').classList.add('typing');
+
+    // Pick up changes made to the files on disk since the last message
+    preparing = true;
+    try { await refreshFromDisk(chat); } finally { preparing = false; }
+    renderChatFiles();
+
+    // Make sure the memory is current: wait for pending changes from the previous message, then re-read it
+    await Promise.race([memoryQueue, new Promise(r => setTimeout(r, 2500))]);   // don't block the reply on a slow extractor
+    await refreshMemory();
+
+    // Saved memory + conversation history (without the empty placeholder) go to the model.
+    // Messages that taught a fact which was later replaced or forgotten are left out, together with their reply.
+    const history = chat.messages.slice(0, -1);
+    const apiMessages = history.filter((m, i) => !isStaleMsg(m) && !(m.role === 'assistant' && isStaleMsg(history[i - 1]))).map(m => {
+      const o = { role: m.role, content: m.role === 'assistant' ? (stripFileBlocks(splitThink(m).answer).trim() || 'Done.') : (m.ctx ?? m.content) };
+      if (m.images && m.images.length) o.images = m.images;
+      return o;
+    });
+    if (apiMessages.length && apiMessages[apiMessages.length - 1].role === 'user') {
+      apiMessages[apiMessages.length - 1].content += memoryReminder(text) + fileReminder(text);
+    }
+    // Qwen3-style models can ignore think:false, so also use their soft switch when Think is off
+    if (!thinkOn && apiMessages.length && apiMessages[apiMessages.length - 1].role === 'user') {
+      apiMessages[apiMessages.length - 1].content += ' /no_think';
+    }
+    const fileText = fileSystemPrompt(chat);
+    // Rules go first of all, then the file instructions; memory goes last in the system area so it is closest to the conversation
+    apiMessages.unshift({ role: 'system', content: [rulesPrompt(), fileText, (memoryPrompt() || {}).content].filter(Boolean).join('\n\n') });
+
+    // Ollama's default context is small: always give long answers and attached files room, and lift any output cap
+    const ctxChars = apiMessages.reduce((n, x) => n + x.content.length, 0);
+    const options = { num_ctx: Math.min(32768, Math.max(16384, Math.ceil((ctxChars / 3 + 8192) / 8192) * 8192)), num_predict: -1 };
+
+    lastNumCtx = options.num_ctx;
+    controller = new AbortController();
+    updateSend();
+    let queued = false, t0 = null, finished = false;
+    const paint = () => { queued = false; if (finished || holdPaint()) return; paintBot(body, botMsg, true); scrollDown(); };
+    const stamp = () => {
+      if (botMsg.thinkTime || !t0) return;
+      const s = splitThink(botMsg);
+      if (s.think && s.answer) botMsg.thinkTime = Math.max(1, Math.round((Date.now() - t0) / 1000));
+    };
+
+    // Drops text the model repeats when it resumes after being cut off
+    const dedupe = (a, b) => {
+      const tail = a.slice(-300), bt = b.replace(/^\s+/, '');
+      for (let n = Math.min(tail.length, bt.length); n >= 4; n--) if (bt.startsWith(tail.slice(-n))) return bt.slice(n);
+      return b;
+    };
+    let reason = '';
+    const consume = async (msgs, resumed, thinkFlag) => {
+      reason = '';
+      const res = await openStream(
+        { model: $('model').value, messages: msgs, stream: true, think: thinkFlag, options },
+        controller.signal
+      );
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '', head = '', holding = resumed;
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
+        for (const line of lines) {
+          if (!line.trim()) continue;
+          const chunk = JSON.parse(line);
+          if (chunk.error) throw new Error(chunk.error);
+          if (chunk.done) reason = chunk.done_reason || '';
+          const msg = chunk.message;
+          if (msg?.thinking || msg?.content) {
+            if (!t0) t0 = Date.now();
+            if (msg.thinking && thinkOn) botMsg.thinking += msg.thinking;
+            if (msg.content) {
+              if (holding) {
+                head += msg.content;
+                if (head.length >= 200) { botMsg.content += dedupe(botMsg.content, head); holding = false; head = ''; }
+              } else botMsg.content += msg.content;
+            }
+            stamp();
+            if (!queued) { queued = true; setTimeout(() => requestAnimationFrame(paint), botMsg.content.length > 20000 ? 350 : 0); }
+          }
+        }
+      }
+      if (holding && head) botMsg.content += dedupe(botMsg.content, head);
+    };
+
+    try {
+      await consume(apiMessages, false, thinkOn);
+      // Hit the output limit mid-answer (long files): ask the model to carry on, up to 8 times
+      let rounds = 0;
+      while (reason === 'length' && rounds < 8) {
+        const partial = splitThink(botMsg).answer;
+        if (!partial.trim()) break;
+        rounds++;
+        $('status').textContent = 'Long output: continuing (' + rounds + ')…';
+        await consume([
+          ...apiMessages,
+          { role: 'assistant', content: partial },
+          { role: 'user', content: 'Your reply was cut off by the output limit. Continue from exactly where it stopped. Do not repeat anything, do not add an introduction, and do not open a new code fence: you are still inside the same block, so keep writing its content and close the block when the content is complete.' },
+        ], true, false);
+      }
+      $('status').textContent = '';
+    } catch (e) {
+      if (e.name !== 'AbortError') {
+        botMsg.content += (botMsg.content ? '\n\n' : '') + '⚠️ ' + e.message;
+      }
+      $('status').textContent = '';
+    }
+
+    finished = true;
+    controller = null;
+    if (!botMsg.thinking) delete botMsg.thinking;
+    if (!botMsg.thinkTime && t0 && splitThink(botMsg).think) botMsg.thinkTime = Math.max(1, Math.round((Date.now() - t0) / 1000));
+    body.querySelector('.content').classList.remove('typing');
+    whenFree(() => paintBot(body, botMsg, false));
+    const made = harvestFiles(chat, botMsg);
+    if (made.length) { renderChatFiles(); toast(made.length === 1 ? 'Created ' + made[0] : 'Created ' + made.length + ' files'); }
+    chat.updated = Date.now();
+    save(); renderHistory(); updateSend();
+
+    // Auto-save memory when the message hints the user wants something remembered
+    if (autoMemory && text && (MEM_HINT.test(text) || MEM_NOW(text))) autoRemember(userMsg, chat, text);
+  }
+
+  // ---------- UI wiring ----------
+  function autoGrow() {
+    const p = $('prompt');
+    p.style.height = 'auto';
+    p.style.height = Math.min(p.scrollHeight, 200) + 'px';
+    updateSend();
+  }
+  $('prompt').addEventListener('input', autoGrow);
+  $('prompt').addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
+  });
+  $('send').onclick = send;
+  // The file picker gives us a handle, so edits can be written back into the original file
+  $('attach').onclick = async () => {
+    if (window.showOpenFilePicker) {
+      try {
+        const hs = await showOpenFilePicker({ multiple: true });
+        for (const h of hs) await addFile(await h.getFile(), h);
+        return;
+      } catch (e) { if (e.name === 'AbortError') return; }
+    }
+    $('file').click();
+  };
+  $('file').onchange = e => { [...e.target.files].forEach(f => addFile(f)); e.target.value = ''; };
+
+  // Drag & drop anywhere on the window
+  window.addEventListener('dragover', e => { e.preventDefault(); $('box').classList.add('over'); });
+  window.addEventListener('dragleave', e => { if (!e.relatedTarget) $('box').classList.remove('over'); });
+  window.addEventListener('drop', async e => {
+    e.preventDefault(); $('box').classList.remove('over');
+    // Handles and files must be requested synchronously, before the event ends
+    const items = [...(e.dataTransfer.items || [])].filter(i => i.kind === 'file').map(i => ({
+      file: i.getAsFile(),
+      handle: i.getAsFileSystemHandle ? i.getAsFileSystemHandle().catch(() => null) : null,
+    }));
+    if (!items.length) { [...e.dataTransfer.files].forEach(f => addFile(f)); return; }
+    for (const it of items) {
+      const h = await it.handle;
+      if (it.file) await addFile(it.file, h && h.kind === 'file' ? h : null);
+    }
+  });
+
+  // Paste images from the clipboard
+  window.addEventListener('paste', e => {
+    const files = [...(e.clipboardData?.files || [])];
+    if (files.length) { e.preventDefault(); files.forEach(f => addFile(f)); }
+  });
+
+  // ---------- Init ----------
+  initIcons();
+  renderThink();
+  loadModels();
+  loadMemory().then(migrateMemory);
+  renderHistory();
+  renderThread();
+  initStore();
+  $('prompt').focus();
+</script>
+</body>
+</html>
